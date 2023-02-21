@@ -23,15 +23,62 @@ namespace pacman
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // برخورد پکمن با دیوار ها
-             check_Dealing_wall();
-            //
+            if (score >= 10)
+            {
+                timer1.Enabled = false;
+                timer2.Enabled = false;
 
-            //خودن توپ ها
-             check_Dealing_food();
-            //
+                MessageBox.Show("امتیاز شما = " + score.ToString() + "\nزمان = "+time_min.ToString()+":"+time_sec.ToString(), "شما بردید",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                if (MessageBox.Show("آیا دوباره بازی می کنید؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    score = 0;
+                    side = "";
+                    time_min = 0;
+                    time_sec = 0;
+                    pictureBox_pacman.Left = 190;
+                    pictureBox_pacman.Top = 318;
+                    pictureBox_pacman.Image = Properties.Resources.pacman_right;
+                    foreach (Control item in this.Controls)
+                    {
+                        if (!item.Visible)
+                            item.Visible = true;
+                    }
+                    label_score.Text = "امتیاز:" + score.ToString();
+                    label_time_min.Text = "00";
+                    label_time_sec.Text = "00";
+                }
+                else
+                    this.Close();
+            }
 
-            //
+            foreach (Control item in this.Controls)
+            {   
+                // برخورد پکمن با دیوار ها
+                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "wall")
+                {
+                    switch (side)
+                    {
+                        //یک حرکت به عقب پس از برخورد به دیوار
+                        case "up": pictureBox_pacman.Top++; break;
+                        case "down": pictureBox_pacman.Top--; break;
+                        case "right": pictureBox_pacman.Left--; break;
+                        case "left": pictureBox_pacman.Left++; break;
+
+                    }
+                    side = "";
+                }
+                //برخورد با غذا
+                else if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "food")
+                {
+                    if (item.Visible)
+                    {
+                        score += 10;
+                        item.Visible = false;
+                    }
+                    label_score.Text = "امتیاز:" + score.ToString();
+                }
+            }
+
             if (pictureBox_pacman.Left >= 400)
                 pictureBox_pacman.Left = -20;
             else if (pictureBox_pacman.Left < -20)
@@ -112,44 +159,6 @@ namespace pacman
             timer1.Enabled = false;
             timer2.Enabled = false;
             button_stop.Visible = false;
-        }
-
-        private void check_Dealing_wall()
-        {
-
-            foreach (Control item in this.Controls)
-            {
-                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string) item.Tag == "wall")
-                {
-                    switch (side)
-                    {
-                        //یک حرکت به عقب پس از برخورد به دیوار
-                        case "up": pictureBox_pacman.Top++; break;
-                        case "down": pictureBox_pacman.Top--; break;
-                        case "right": pictureBox_pacman.Left--; break;
-                        case "left": pictureBox_pacman.Left++; break;
-
-                    }
-                    side = "";
-                }
-            }
-
-        }
-
-        private void check_Dealing_food()
-        {
-            foreach (Control item in this.Controls)
-            {
-                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string) item.Tag == "food")
-                {
-                    if (item.Visible)
-                    {
-                        score++;
-                        item.Visible = false;
-                    }
-                }
-            }
-            label_score.Text = "امتیاز:" + score.ToString();
         }
     }
 }
