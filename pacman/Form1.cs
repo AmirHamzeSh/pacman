@@ -24,44 +24,12 @@ namespace pacman
         private void timer1_Tick(object sender, EventArgs e)
         {
             // برخورد پکمن با دیوار ها
-            if (pictureBox_pacman.Bounds.IntersectsWith(pictureBox1.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox2.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox3.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox4.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox5.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox6.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox7.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox8.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox9.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox11.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox12.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox13.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox14.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox15.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox16.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox17.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox18.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox19.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox20.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox21.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox22.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox23.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox24.Bounds) ||
-                pictureBox_pacman.Bounds.IntersectsWith(pictureBox27.Bounds))
-            {
+             check_Dealing_wall();
+            //
 
-                switch (side)
-                {
-                    //یک حرکت به عقب پس از برخورد به دیوار
-                    case "up": pictureBox_pacman.Top++;     break;
-                    case "down": pictureBox_pacman.Top--;   break;
-                    case "right": pictureBox_pacman.Left--; break;
-                    case "left": pictureBox_pacman.Left++;  break;
-                    
-                }
-                side = "";
-                
-            }
+            //خودن توپ ها
+             check_Dealing_food();
+            //
 
             //
             if (pictureBox_pacman.Left >= 400)
@@ -146,9 +114,42 @@ namespace pacman
             button_stop.Visible = false;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void check_Dealing_wall()
         {
 
+            foreach (Control item in this.Controls)
+            {
+                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string) item.Tag == "wall")
+                {
+                    switch (side)
+                    {
+                        //یک حرکت به عقب پس از برخورد به دیوار
+                        case "up": pictureBox_pacman.Top++; break;
+                        case "down": pictureBox_pacman.Top--; break;
+                        case "right": pictureBox_pacman.Left--; break;
+                        case "left": pictureBox_pacman.Left++; break;
+
+                    }
+                    side = "";
+                }
+            }
+
+        }
+
+        private void check_Dealing_food()
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string) item.Tag == "food")
+                {
+                    if (item.Visible)
+                    {
+                        score++;
+                        item.Visible = false;
+                    }
+                }
+            }
+            label_score.Text = "امتیاز:" + score.ToString();
         }
     }
 }

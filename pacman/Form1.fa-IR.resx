@@ -129,6 +129,9 @@
         MG8hbDfPuBy4nfGdEGOP5y8HywetI6b6eAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="food_4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 348</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
