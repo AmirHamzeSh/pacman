@@ -23,7 +23,7 @@ namespace pacman
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (score >= 10)
+            if (score >= 1850)
             {
                 timer1.Enabled = false;
                 timer2.Enabled = false;
@@ -38,12 +38,13 @@ namespace pacman
                     pictureBox_pacman.Left = 190;
                     pictureBox_pacman.Top = 318;
                     pictureBox_pacman.Image = Properties.Resources.pacman_right;
+                    button_stop.Visible = true;
                     foreach (Control item in this.Controls)
                     {
                         if (!item.Visible)
                             item.Visible = true;
                     }
-                    label_score.Text = "امتیاز:" + score.ToString();
+                    label_score.Text = "امتیاز:صفر";
                     label_time_min.Text = "00";
                     label_time_sec.Text = "00";
                 }
