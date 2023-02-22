@@ -69,7 +69,6 @@
             this.pictureBox206 = new System.Windows.Forms.PictureBox();
             this.pictureBox207 = new System.Windows.Forms.PictureBox();
             this.pictureBox208 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_ghost = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox209 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -252,6 +251,12 @@
             this.pictureBox202 = new System.Windows.Forms.PictureBox();
             this.pictureBox203 = new System.Windows.Forms.PictureBox();
             this.pictureBox204 = new System.Windows.Forms.PictureBox();
+            this.picGhost1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox210 = new System.Windows.Forms.PictureBox();
+            this.pictureBox211 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.picGhost2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pacman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -280,7 +285,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox206)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox207)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox208)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ghost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox209)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -463,6 +467,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox203)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGhost1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox210)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox211)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGhost2)).BeginInit();
             this.SuspendLayout();
             // 
             // button_up
@@ -770,13 +778,6 @@
             this.pictureBox208.Name = "pictureBox208";
             this.pictureBox208.TabStop = false;
             this.pictureBox208.Tag = "food";
-            // 
-            // pictureBox_ghost
-            // 
-            this.pictureBox_ghost.Image = global::pacman.Properties.Resources.ghost;
-            resources.ApplyResources(this.pictureBox_ghost, "pictureBox_ghost");
-            this.pictureBox_ghost.Name = "pictureBox_ghost";
-            this.pictureBox_ghost.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -2234,13 +2235,60 @@
             this.pictureBox204.TabStop = false;
             this.pictureBox204.Tag = "food";
             // 
+            // picGhost1
+            // 
+            this.picGhost1.Image = global::pacman.Properties.Resources.ghost_right;
+            resources.ApplyResources(this.picGhost1, "picGhost1");
+            this.picGhost1.Name = "picGhost1";
+            this.picGhost1.TabStop = false;
+            this.picGhost1.Tag = "ghost";
+            // 
+            // pictureBox210
+            // 
+            this.pictureBox210.Image = global::pacman.Properties.Resources.food;
+            resources.ApplyResources(this.pictureBox210, "pictureBox210");
+            this.pictureBox210.Name = "pictureBox210";
+            this.pictureBox210.TabStop = false;
+            this.pictureBox210.Tag = "";
+            // 
+            // pictureBox211
+            // 
+            this.pictureBox211.Image = global::pacman.Properties.Resources.ghost_right;
+            resources.ApplyResources(this.pictureBox211, "pictureBox211");
+            this.pictureBox211.Name = "pictureBox211";
+            this.pictureBox211.TabStop = false;
+            this.pictureBox211.Tag = "";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // picGhost2
+            // 
+            this.picGhost2.Image = global::pacman.Properties.Resources.ghost_right;
+            resources.ApplyResources(this.picGhost2, "picGhost2");
+            this.picGhost2.Name = "picGhost2";
+            this.picGhost2.TabStop = false;
+            this.picGhost2.Tag = "ghost";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.CancelButton = this.button_stop;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox_pacman);
+            this.Controls.Add(this.pictureBox211);
+            this.Controls.Add(this.picGhost2);
+            this.Controls.Add(this.picGhost1);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox15);
@@ -2264,6 +2312,7 @@
             this.Controls.Add(this.pictureBox66);
             this.Controls.Add(this.pictureBox63);
             this.Controls.Add(this.pictureBox58);
+            this.Controls.Add(this.pictureBox210);
             this.Controls.Add(this.pictureBox51);
             this.Controls.Add(this.pictureBox50);
             this.Controls.Add(this.pictureBox164);
@@ -2336,7 +2385,6 @@
             this.Controls.Add(this.pictureBox76);
             this.Controls.Add(this.pictureBox209);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox_ghost);
             this.Controls.Add(this.pictureBox71);
             this.Controls.Add(this.pictureBox70);
             this.Controls.Add(this.pictureBox85);
@@ -2494,7 +2542,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox206)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox207)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox208)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ghost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox209)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -2677,6 +2724,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox202)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox203)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox204)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGhost1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox210)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox211)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGhost2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2723,7 +2774,6 @@
         private System.Windows.Forms.PictureBox pictureBox206;
         private System.Windows.Forms.PictureBox pictureBox207;
         private System.Windows.Forms.PictureBox pictureBox208;
-        private System.Windows.Forms.PictureBox pictureBox_ghost;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox209;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -2906,6 +2956,12 @@
         private System.Windows.Forms.PictureBox pictureBox202;
         private System.Windows.Forms.PictureBox pictureBox203;
         private System.Windows.Forms.PictureBox pictureBox204;
+        private System.Windows.Forms.PictureBox picGhost1;
+        private System.Windows.Forms.PictureBox pictureBox210;
+        private System.Windows.Forms.PictureBox pictureBox211;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picGhost2;
 
     }
 }

@@ -94,9 +94,6 @@
     <None Include="Resources\pacman_right.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ghost.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ghost_icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +173,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

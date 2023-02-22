@@ -12,10 +12,16 @@ namespace pacman
 {
     public partial class Form1 : Form
     {
-        int score = 0;
-        string side = "";
-        int time_min = 0, time_sec = 0;
-        
+        string side = "",
+            side_ghost1 = "right",
+            side_ghost2 = "right";
+        int count_food = 185;
+        bool end_game = false;
+
+        int time_min = 0,
+            time_sec = 0,
+            score = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,35 +29,6 @@ namespace pacman
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (score >= 1850)
-            {
-                timer1.Enabled = false;
-                timer2.Enabled = false;
-
-                MessageBox.Show("امتیاز شما = " + score.ToString() + "\nزمان = "+time_min.ToString()+":"+time_sec.ToString(), "شما بردید",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                if (MessageBox.Show("آیا دوباره بازی می کنید؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    score = 0;
-                    side = "";
-                    time_min = 0;
-                    time_sec = 0;
-                    pictureBox_pacman.Left = 190;
-                    pictureBox_pacman.Top = 318;
-                    pictureBox_pacman.Image = Properties.Resources.pacman_right;
-                    button_stop.Visible = true;
-                    foreach (Control item in this.Controls)
-                    {
-                        if (!item.Visible)
-                            item.Visible = true;
-                    }
-                    label_score.Text = "امتیاز:صفر";
-                    label_time_min.Text = "00";
-                    label_time_sec.Text = "00";
-                }
-                else
-                    this.Close();
-            }
-
             foreach (Control item in this.Controls)
             {   
                 // برخورد پکمن با دیوار ها
@@ -75,15 +52,93 @@ namespace pacman
                     {
                         score += 10;
                         item.Visible = false;
+                        item.Tag = "_food";
                     }
                     label_score.Text = "امتیاز:" + score.ToString();
                 }
+
+                //برخورد پکمن با روح
+                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "ghost")
+                {
+                    if (item.Visible)
+                    {
+                        item.Tag = "_ghost";
+                        score -= 20;
+                        label_score.Text = "امتیاز:" + score.ToString();
+                    }
+                }
+
+                //برخود روح 1 به دیوار
+                if (picGhost1.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "wall")
+                {
+                    if(side_ghost1 == "right")
+                        side_ghost1 = "left";
+                    else
+                        side_ghost1 = "right";
+                }
+
             }
 
+
+            // حرکت روح 1
+            if (picGhost1.Visible)
+            {
+
+                if (side_ghost1 == "right")
+                {
+                    picGhost1.Image = Properties.Resources.ghost_right;
+                    picGhost1.Left++;
+                }
+                else
+                {
+                    picGhost1.Image = Properties.Resources.ghost_left;
+                    picGhost1.Left--;
+                }
+            }
+            // روح 2
+            if (picGhost2.Visible)
+            {
+                if (side_ghost2 == "left")
+                {
+                    picGhost2.Image = Properties.Resources.ghost_left;
+                    picGhost2.Left--;
+                }
+                if (side_ghost2 == "right")
+                {
+                    picGhost2.Image = Properties.Resources.ghost_right;
+                    picGhost2.Left++;
+                }
+            
+                if (side_ghost2 == "up")
+                    picGhost2.Top--;
+
+                if (side_ghost2 == "down")
+                    picGhost2.Top++;
+
+                if (picGhost2.Top == 318 && picGhost2.Left == 291)
+                    side_ghost2 = "up";
+
+                if (picGhost2.Top == 214 && picGhost2.Left == 291)
+                    side_ghost2 = "left";
+
+                if (picGhost2.Top == 214 && picGhost2.Left == 85)
+                    side_ghost2 = "down";
+
+                if (picGhost2.Top == 318 && picGhost2.Left == 85)
+                    side_ghost2 = "right";
+            }
+
+
+            //خارج شدن پکمن از محیط بازی
             if (pictureBox_pacman.Left >= 400)
                 pictureBox_pacman.Left = -20;
             else if (pictureBox_pacman.Left < -20)
                 pictureBox_pacman.Left = 400;
+
+            if (picGhost1.Left >= 400)
+                picGhost1.Left = -20;
+            else if (picGhost1.Left < -20)
+                picGhost1.Left = 400;
 
             //حرکت پکمن
             switch (side)
@@ -93,7 +148,6 @@ namespace pacman
                 case "right":pictureBox_pacman.Left++; break;
                 case "left": pictureBox_pacman.Left--; break;
             }
-            
         }
         //ثانیه شمار
         private void timer2_Tick(object sender, EventArgs e)
@@ -115,8 +169,62 @@ namespace pacman
                 label_time_min.Text = "0" + time_min.ToString();
             else
                 label_time_min.Text = time_min.ToString();
+            
+            //اضافه کردن روح ها به بازی
+            if (time_sec == 30 && picGhost1.Visible == false)
+                picGhost1.Visible = true;
+            else if(time_sec == 1 && picGhost2.Visible == false)
+                picGhost2.Visible = true;
 
+            if ((string)picGhost1.Tag == "_ghost")
+                picGhost1.Tag = "ghost";
 
+            if ((string)picGhost2.Tag == "_ghost")
+                picGhost2.Tag = "ghost";
+
+            //چک کردن وجود غذا
+            //اگر غذایی باقی نماند پایان بازی
+            int count_food = 185;
+            bool end_game = false;
+            foreach (Control item in Controls)
+            {
+                if ((string)item.Tag == "_food")
+                    count_food--;
+            }
+
+            if (count_food == 0)
+                end_game = true;
+
+            if (end_game)
+            {
+                timer1.Enabled = false;
+                timer2.Enabled = false;
+
+                MessageBox.Show("امتیاز شما = " + score.ToString() + "\nزمان = " + time_min.ToString() + ":" + time_sec.ToString(), "شما بردید", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (MessageBox.Show("آیا دوباره بازی می کنید؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    score = 0;
+                    side = "";
+                    time_min = 0;
+                    time_sec = 0;
+                    pictureBox_pacman.Left = 190;
+                    pictureBox_pacman.Top = 318;
+                    pictureBox_pacman.Image = Properties.Resources.pacman_right;
+                    button_stop.Visible = true;
+                    foreach (Control item in this.Controls)
+                    {
+                        if (!item.Visible)
+                            item.Visible = true;
+                    }
+                    picGhost1.Visible = false;
+                    picGhost2.Visible = false;
+                    label_score.Text = "امتیاز:صفر";
+                    label_time_min.Text = "00";
+                    label_time_sec.Text = "00";
+                }
+                else
+                    this.Close();
+            }            
         }
 
         private void button_up_Click(object sender, EventArgs e)
