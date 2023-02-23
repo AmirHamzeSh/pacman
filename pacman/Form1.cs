@@ -15,8 +15,6 @@ namespace pacman
         string side = "",
             side_ghost1 = "right",
             side_ghost2 = "right";
-        int count_food = 185;
-        bool end_game = false;
 
         int time_min = 0,
             time_sec = 0,
@@ -29,6 +27,16 @@ namespace pacman
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+            //حرکت پکمن
+            switch (side)
+            {
+                case "up": pictureBox_pacman.Top--; break;
+                case "down": pictureBox_pacman.Top++; break;
+                case "right": pictureBox_pacman.Left++; break;
+                case "left": pictureBox_pacman.Left--; break;
+            }
+
             foreach (Control item in this.Controls)
             {   
                 // برخورد پکمن با دیوار ها
@@ -58,7 +66,7 @@ namespace pacman
                 }
 
                 //برخورد پکمن با روح
-                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "ghost")
+                else if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "ghost")
                 {
                     if (item.Visible)
                     {
@@ -71,10 +79,7 @@ namespace pacman
                 //برخود روح 1 به دیوار
                 if (picGhost1.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "wall")
                 {
-                    if(side_ghost1 == "right")
-                        side_ghost1 = "left";
-                    else
-                        side_ghost1 = "right";
+                    side_ghost1 = side_ghost1 == "right" ? side_ghost1 = "left" : side_ghost1 = "right";
                 }
 
             }
@@ -83,7 +88,6 @@ namespace pacman
             // حرکت روح 1
             if (picGhost1.Visible)
             {
-
                 if (side_ghost1 == "right")
                 {
                     picGhost1.Image = Properties.Resources.ghost_right;
@@ -95,7 +99,7 @@ namespace pacman
                     picGhost1.Left--;
                 }
             }
-            // روح 2
+            // حرکت روح 2
             if (picGhost2.Visible)
             {
                 if (side_ghost2 == "left")
@@ -135,20 +139,15 @@ namespace pacman
             else if (pictureBox_pacman.Left < -20)
                 pictureBox_pacman.Left = 400;
 
+            //خارج شدن روح یک
             if (picGhost1.Left >= 400)
                 picGhost1.Left = -20;
             else if (picGhost1.Left < -20)
                 picGhost1.Left = 400;
 
-            //حرکت پکمن
-            switch (side)
-            {
-                case "up":   pictureBox_pacman.Top--;  break;
-                case "down": pictureBox_pacman.Top++;  break;
-                case "right":pictureBox_pacman.Left++; break;
-                case "left": pictureBox_pacman.Left--; break;
-            }
-        }
+        } //timer1 پایان 
+
+
         //ثانیه شمار
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -159,21 +158,16 @@ namespace pacman
                 time_sec = 0;
                 time_min++;
             }
+            string time_sec_string = time_sec.ToString();
+            string time_min_string = time_min.ToString();
 
-            if (time_sec < 10)
-                label_time_sec.Text = "0" + time_sec.ToString();
-            else
-                label_time_sec.Text = time_sec.ToString();
+            label_time_sec.Text = time_sec < 10 ? "0" + time_sec_string : time_sec_string;
+            label_time_min.Text = time_min < 10 ? "0" + time_min_string : time_min_string;
 
-            if (time_min < 10)
-                label_time_min.Text = "0" + time_min.ToString();
-            else
-                label_time_min.Text = time_min.ToString();
-            
             //اضافه کردن روح ها به بازی
             if (time_sec == 30 && picGhost1.Visible == false)
                 picGhost1.Visible = true;
-            else if(time_sec == 1 && picGhost2.Visible == false)
+            if(time_sec == 1 && picGhost2.Visible == false)
                 picGhost2.Visible = true;
 
             if ((string)picGhost1.Tag == "_ghost")
@@ -192,8 +186,7 @@ namespace pacman
                     count_food--;
             }
 
-            if (count_food == 0)
-                end_game = true;
+            end_game = count_food == 0 ? true : false;
 
             if (end_game)
             {
@@ -207,60 +200,68 @@ namespace pacman
                     side = "";
                     time_min = 0;
                     time_sec = 0;
+
                     pictureBox_pacman.Left = 190;
                     pictureBox_pacman.Top = 318;
                     pictureBox_pacman.Image = Properties.Resources.pacman_right;
-                    button_stop.Visible = true;
+                    
                     foreach (Control item in this.Controls)
                     {
                         if (!item.Visible)
                             item.Visible = true;
+
+                        if ((string)item.Tag == "_food")
+                            item.Tag = "food";
                     }
+
+                    button_stop.Visible = false;
                     picGhost1.Visible = false;
                     picGhost2.Visible = false;
-                    label_score.Text = "امتیاز:صفر";
+                    end_game = false;
+                    
+                    label_score.Text = "امتیاز: صفر";
                     label_time_min.Text = "00";
                     label_time_sec.Text = "00";
                 }
                 else
                     this.Close();
             }            
-        }
+        }//timer2 پایان
 
         private void button_up_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            timer2.Enabled = true;
             button_stop.Visible = true;
             side = "up";
             pictureBox_pacman.Image = Properties.Resources.pacman_up;
-            timer2.Enabled = true;
         }
 
         private void button_down_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            timer2.Enabled = true;
             button_stop.Visible = true;
             side = "down";
             pictureBox_pacman.Image = Properties.Resources.pacman_down;
-            timer2.Enabled = true;
         }
 
         private void button_right_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            timer2.Enabled = true;
             button_stop.Visible = true;
             side = "right";
             pictureBox_pacman.Image = Properties.Resources.pacman_right;
-            timer2.Enabled = true;
         }
 
         private void button_left_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            timer2.Enabled = true;
             button_stop.Visible = true;
             side = "left";
             pictureBox_pacman.Image = Properties.Resources.pacman_left;
-            timer2.Enabled = true;
         }
 
         private void button_stop_Click(object sender, EventArgs e)
