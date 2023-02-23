@@ -18,7 +18,8 @@ namespace pacman
 
         int time_min = 0,
             time_sec = 0,
-            score = 0;
+            score = 0,
+            count_health = 3;
 
         public Form1()
         {
@@ -73,6 +74,18 @@ namespace pacman
                         item.Tag = "_ghost";
                         score -= 20;
                         label_score.Text = "امتیاز:" + score.ToString();
+                        pictureBox_pacman.Left = 191;
+                        pictureBox_pacman.Top = 314;
+                        pictureBox_pacman.Image = Properties.Resources.pacman_right;
+                        side = "right";
+                        count_health--;
+                        switch (count_health)
+                        {
+                            case 2: picHealth3.Visible = false; break;
+                            case 1: picHealth2.Visible = false; break;
+                            case 0: picHealth1.Visible = false; side = ""; break;
+
+                        }
                     }
                 }
 
@@ -119,7 +132,7 @@ namespace pacman
                 if (side_ghost2 == "down")
                     picGhost2.Top++;
 
-                if (picGhost2.Top == 318 && picGhost2.Left == 291)
+                if (picGhost2.Top == 314 && picGhost2.Left == 291)
                     side_ghost2 = "up";
 
                 if (picGhost2.Top == 214 && picGhost2.Left == 291)
@@ -128,7 +141,7 @@ namespace pacman
                 if (picGhost2.Top == 214 && picGhost2.Left == 85)
                     side_ghost2 = "down";
 
-                if (picGhost2.Top == 318 && picGhost2.Left == 85)
+                if (picGhost2.Top == 314 && picGhost2.Left == 85)
                     side_ghost2 = "right";
             }
 
@@ -178,7 +191,7 @@ namespace pacman
 
             //چک کردن وجود غذا
             //اگر غذایی باقی نماند پایان بازی
-            int count_food = 185;
+            int count_food = 188;
             bool end_game = false;
             foreach (Control item in Controls)
             {
@@ -188,7 +201,7 @@ namespace pacman
 
             end_game = count_food == 0 ? true : false;
 
-            if (end_game)
+            if (end_game || count_health < 1)
             {
                 timer1.Enabled = false;
                 timer2.Enabled = false;
@@ -200,9 +213,10 @@ namespace pacman
                     side = "";
                     time_min = 0;
                     time_sec = 0;
+                    count_health = 3;
 
-                    pictureBox_pacman.Left = 190;
-                    pictureBox_pacman.Top = 318;
+                    pictureBox_pacman.Left = 191;
+                    pictureBox_pacman.Top = 314;
                     pictureBox_pacman.Image = Properties.Resources.pacman_right;
                     
                     foreach (Control item in this.Controls)

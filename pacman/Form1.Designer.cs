@@ -257,6 +257,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.picGhost2 = new System.Windows.Forms.PictureBox();
+            this.picHealth1 = new System.Windows.Forms.PictureBox();
+            this.picHealth2 = new System.Windows.Forms.PictureBox();
+            this.picHealth3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox212 = new System.Windows.Forms.PictureBox();
+            this.pictureBox213 = new System.Windows.Forms.PictureBox();
+            this.pictureBox214 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pacman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -471,6 +477,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox210)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox211)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGhost2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealth1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealth2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealth3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox212)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox213)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox214)).BeginInit();
             this.SuspendLayout();
             // 
             // button_up
@@ -2277,15 +2289,66 @@
             this.picGhost2.TabStop = false;
             this.picGhost2.Tag = "ghost";
             // 
+            // picHealth1
+            // 
+            this.picHealth1.BackColor = System.Drawing.Color.Transparent;
+            this.picHealth1.Image = global::pacman.Properties.Resources.pacman_right;
+            resources.ApplyResources(this.picHealth1, "picHealth1");
+            this.picHealth1.Name = "picHealth1";
+            this.picHealth1.TabStop = false;
+            // 
+            // picHealth2
+            // 
+            this.picHealth2.BackColor = System.Drawing.Color.Transparent;
+            this.picHealth2.Image = global::pacman.Properties.Resources.pacman_right;
+            resources.ApplyResources(this.picHealth2, "picHealth2");
+            this.picHealth2.Name = "picHealth2";
+            this.picHealth2.TabStop = false;
+            // 
+            // picHealth3
+            // 
+            this.picHealth3.BackColor = System.Drawing.Color.Transparent;
+            this.picHealth3.Image = global::pacman.Properties.Resources.pacman_right;
+            resources.ApplyResources(this.picHealth3, "picHealth3");
+            this.picHealth3.Name = "picHealth3";
+            this.picHealth3.TabStop = false;
+            // 
+            // pictureBox212
+            // 
+            this.pictureBox212.Image = global::pacman.Properties.Resources.food;
+            resources.ApplyResources(this.pictureBox212, "pictureBox212");
+            this.pictureBox212.Name = "pictureBox212";
+            this.pictureBox212.TabStop = false;
+            this.pictureBox212.Tag = "food";
+            // 
+            // pictureBox213
+            // 
+            this.pictureBox213.Image = global::pacman.Properties.Resources.food;
+            resources.ApplyResources(this.pictureBox213, "pictureBox213");
+            this.pictureBox213.Name = "pictureBox213";
+            this.pictureBox213.TabStop = false;
+            this.pictureBox213.Tag = "food";
+            // 
+            // pictureBox214
+            // 
+            this.pictureBox214.Image = global::pacman.Properties.Resources.food;
+            resources.ApplyResources(this.pictureBox214, "pictureBox214");
+            this.pictureBox214.Name = "pictureBox214";
+            this.pictureBox214.TabStop = false;
+            this.pictureBox214.Tag = "food";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.CancelButton = this.button_stop;
+            this.Controls.Add(this.pictureBox_pacman);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox_pacman);
+            this.Controls.Add(this.picHealth3);
+            this.Controls.Add(this.picHealth2);
+            this.Controls.Add(this.picHealth1);
             this.Controls.Add(this.pictureBox211);
             this.Controls.Add(this.picGhost2);
             this.Controls.Add(this.picGhost1);
@@ -2347,6 +2410,8 @@
             this.Controls.Add(this.pictureBox59);
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox40);
+            this.Controls.Add(this.pictureBox214);
+            this.Controls.Add(this.pictureBox213);
             this.Controls.Add(this.pictureBox39);
             this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.pictureBox81);
@@ -2439,6 +2504,7 @@
             this.Controls.Add(this.pictureBox123);
             this.Controls.Add(this.pictureBox129);
             this.Controls.Add(this.pictureBox110);
+            this.Controls.Add(this.pictureBox212);
             this.Controls.Add(this.pictureBox141);
             this.Controls.Add(this.pictureBox140);
             this.Controls.Add(this.pictureBox139);
@@ -2728,6 +2794,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox210)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox211)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGhost2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealth1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealth2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHealth3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox212)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox213)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox214)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2962,6 +3034,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picGhost2;
+        private System.Windows.Forms.PictureBox picHealth1;
+        private System.Windows.Forms.PictureBox picHealth2;
+        private System.Windows.Forms.PictureBox picHealth3;
+        private System.Windows.Forms.PictureBox pictureBox212;
+        private System.Windows.Forms.PictureBox pictureBox213;
+        private System.Windows.Forms.PictureBox pictureBox214;
 
     }
 }
