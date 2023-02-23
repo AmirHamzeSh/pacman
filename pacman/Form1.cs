@@ -14,7 +14,7 @@ namespace pacman
     {
         string side = "",
             side_ghost1 = "right",
-            side_ghost2 = "right";
+            side_ghost2 = "up";
 
         int time_min = 0,
             time_sec = 0,
@@ -135,7 +135,7 @@ namespace pacman
                 if (picGhost2.Top == 314 && picGhost2.Left == 291)
                     side_ghost2 = "up";
 
-                if (picGhost2.Top == 214 && picGhost2.Left == 291)
+                if ((picGhost2.Top == 214 && picGhost2.Left == 291) || (picGhost2.Top == 214 && picGhost2.Left == 191))
                     side_ghost2 = "left";
 
                 if (picGhost2.Top == 214 && picGhost2.Left == 85)
@@ -218,6 +218,10 @@ namespace pacman
                     pictureBox_pacman.Left = 191;
                     pictureBox_pacman.Top = 314;
                     pictureBox_pacman.Image = Properties.Resources.pacman_right;
+
+                    picGhost2.Left = 191;
+                    picGhost2.Top = 252;
+                    side_ghost2 = "up";
                     
                     foreach (Control item in this.Controls)
                     {
