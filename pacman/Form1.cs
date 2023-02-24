@@ -206,7 +206,12 @@ namespace pacman
                 timer1.Enabled = false;
                 timer2.Enabled = false;
 
-                MessageBox.Show("امتیاز شما = " + score.ToString() + "\nزمان = " + time_min.ToString() + ":" + time_sec.ToString(), "شما بردید", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(end_game)
+                    MessageBox.Show("امتیاز شما = " + score.ToString() + "\nزمان = " + time_min.ToString() + ":" + time_sec.ToString(), "شما بردید", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("امتیاز شما = " + score.ToString() + "\nزمان = " + time_min.ToString() + ":" + time_sec.ToString(), "شما باختید", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+
                 if (MessageBox.Show("آیا دوباره بازی می کنید؟", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     score = 0;
