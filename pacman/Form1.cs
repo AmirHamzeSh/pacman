@@ -77,7 +77,7 @@ namespace pacman
                         pictureBox_pacman.Left = 191;
                         pictureBox_pacman.Top = 314;
                         pictureBox_pacman.Image = Properties.Resources.pacman_right;
-                        side = "right";
+                        side = "";
                         count_health--;
                         switch (count_health)
                         {
