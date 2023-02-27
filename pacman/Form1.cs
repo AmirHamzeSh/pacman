@@ -115,33 +115,32 @@ namespace pacman
             // حرکت روح 2
             if (picGhost2.Visible)
             {
-                if (side_ghost2 == "left")
-                {
-                    picGhost2.Image = Properties.Resources.ghost_left;
-                    picGhost2.Left--;
-                }
-                if (side_ghost2 == "right")
-                {
-                    picGhost2.Image = Properties.Resources.ghost_right;
-                    picGhost2.Left++;
-                }
-            
-                if (side_ghost2 == "up")
-                    picGhost2.Top--;
 
-                if (side_ghost2 == "down")
-                    picGhost2.Top++;
+                switch (side_ghost2)
+                {
+                    case "up":
+                        picGhost2.Top--;
+                        break;
+                    case "down":
+                        picGhost2.Top++;
+                        break;
+                    case "right":
+                        picGhost2.Left++;
+                        picGhost2.Image = Properties.Resources.ghost_right;
+                        break;
+                    case "left":
+                        picGhost2.Left--;
+                        picGhost2.Image = Properties.Resources.ghost_left;
+                        break;
+                }
 
                 if (picGhost2.Top == 314 && picGhost2.Left == 291)
                     side_ghost2 = "up";
-
-                if ((picGhost2.Top == 214 && picGhost2.Left == 291) || (picGhost2.Top == 214 && picGhost2.Left == 191))
+                else if ((picGhost2.Top == 214 && picGhost2.Left == 291) || (picGhost2.Top == 214 && picGhost2.Left == 191))
                     side_ghost2 = "left";
-
-                if (picGhost2.Top == 214 && picGhost2.Left == 85)
+                else if (picGhost2.Top == 214 && picGhost2.Left == 85)
                     side_ghost2 = "down";
-
-                if (picGhost2.Top == 314 && picGhost2.Left == 85)
+                else if (picGhost2.Top == 314 && picGhost2.Left == 85)
                     side_ghost2 = "right";
             }
 
@@ -227,7 +226,7 @@ namespace pacman
                     picGhost2.Left = 191;
                     picGhost2.Top = 252;
                     side_ghost2 = "up";
-                    
+
                     foreach (Control item in this.Controls)
                     {
                         if (!item.Visible)
@@ -237,61 +236,52 @@ namespace pacman
                             item.Tag = "food";
                     }
 
-                    button_stop.Visible = false;
                     picGhost1.Visible = false;
                     picGhost2.Visible = false;
                     end_game = false;
-                    
+
                     label_score.Text = "امتیاز: صفر";
                     label_time_min.Text = "00";
                     label_time_sec.Text = "00";
                 }
                 else
-                    this.Close();
+                    Application.Exit();
             }            
         }//timer2 پایان
 
-        private void button_up_Click(object sender, EventArgs e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            lbl_guide1.Visible = false;
+            lbl_guide2.Visible = false;
             timer1.Enabled = true;
             timer2.Enabled = true;
-            button_stop.Visible = true;
-            side = "up";
-            pictureBox_pacman.Image = Properties.Resources.pacman_up;
-        }
-
-        private void button_down_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = true;
-            timer2.Enabled = true;
-            button_stop.Visible = true;
-            side = "down";
-            pictureBox_pacman.Image = Properties.Resources.pacman_down;
-        }
-
-        private void button_right_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = true;
-            timer2.Enabled = true;
-            button_stop.Visible = true;
-            side = "right";
-            pictureBox_pacman.Image = Properties.Resources.pacman_right;
-        }
-
-        private void button_left_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = true;
-            timer2.Enabled = true;
-            button_stop.Visible = true;
-            side = "left";
-            pictureBox_pacman.Image = Properties.Resources.pacman_left;
-        }
-
-        private void button_stop_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-            timer2.Enabled = false;
-            button_stop.Visible = false;
+            
+            switch (e.KeyCode)
+            {
+                case Keys.Up:
+                    side = "up";
+                    pictureBox_pacman.Image = Properties.Resources.pacman_up;
+                    break;
+                case Keys.Down:
+                    side = "down";
+                    pictureBox_pacman.Image = Properties.Resources.pacman_down;
+                    break;
+                case Keys.Right:
+                    side = "right";
+                    pictureBox_pacman.Image = Properties.Resources.pacman_right;
+                    break;
+                case Keys.Left:
+                    side = "left";
+                    pictureBox_pacman.Image = Properties.Resources.pacman_left;
+                    break;
+                case Keys.Space:
+                    timer1.Enabled = false;
+                    timer2.Enabled = false;
+                    break;
+                case Keys.Escape:
+                    Application.Exit();
+                    break;
+            }
         }
     }
 }

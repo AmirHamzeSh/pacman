@@ -30,14 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button_up = new System.Windows.Forms.Button();
-            this.button_down = new System.Windows.Forms.Button();
-            this.button_right = new System.Windows.Forms.Button();
-            this.button_left = new System.Windows.Forms.Button();
             this.label_score = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox_pacman = new System.Windows.Forms.PictureBox();
-            this.button_stop = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -263,6 +258,8 @@
             this.pictureBox212 = new System.Windows.Forms.PictureBox();
             this.pictureBox213 = new System.Windows.Forms.PictureBox();
             this.pictureBox214 = new System.Windows.Forms.PictureBox();
+            this.lbl_guide1 = new System.Windows.Forms.Label();
+            this.lbl_guide2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pacman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -485,46 +482,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox214)).BeginInit();
             this.SuspendLayout();
             // 
-            // button_up
-            // 
-            this.button_up.BackColor = System.Drawing.Color.Black;
-            this.button_up.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button_up, "button_up");
-            this.button_up.Name = "button_up";
-            this.button_up.TabStop = false;
-            this.button_up.UseVisualStyleBackColor = false;
-            this.button_up.Click += new System.EventHandler(this.button_up_Click);
-            // 
-            // button_down
-            // 
-            this.button_down.BackColor = System.Drawing.Color.Black;
-            this.button_down.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button_down, "button_down");
-            this.button_down.Name = "button_down";
-            this.button_down.TabStop = false;
-            this.button_down.UseVisualStyleBackColor = false;
-            this.button_down.Click += new System.EventHandler(this.button_down_Click);
-            // 
-            // button_right
-            // 
-            this.button_right.BackColor = System.Drawing.Color.Black;
-            this.button_right.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button_right, "button_right");
-            this.button_right.Name = "button_right";
-            this.button_right.TabStop = false;
-            this.button_right.UseVisualStyleBackColor = false;
-            this.button_right.Click += new System.EventHandler(this.button_right_Click);
-            // 
-            // button_left
-            // 
-            this.button_left.BackColor = System.Drawing.Color.Black;
-            this.button_left.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button_left, "button_left");
-            this.button_left.Name = "button_left";
-            this.button_left.TabStop = false;
-            this.button_left.UseVisualStyleBackColor = false;
-            this.button_left.Click += new System.EventHandler(this.button_left_Click);
-            // 
             // label_score
             // 
             this.label_score.BackColor = System.Drawing.Color.Black;
@@ -543,18 +500,6 @@
             resources.ApplyResources(this.pictureBox_pacman, "pictureBox_pacman");
             this.pictureBox_pacman.Name = "pictureBox_pacman";
             this.pictureBox_pacman.TabStop = false;
-            // 
-            // button_stop
-            // 
-            this.button_stop.BackColor = System.Drawing.Color.Black;
-            this.button_stop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_stop.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.button_stop, "button_stop");
-            this.button_stop.ForeColor = System.Drawing.Color.White;
-            this.button_stop.Name = "button_stop";
-            this.button_stop.TabStop = false;
-            this.button_stop.UseVisualStyleBackColor = false;
-            this.button_stop.Click += new System.EventHandler(this.button_stop_Click);
             // 
             // pictureBox2
             // 
@@ -2337,12 +2282,23 @@
             this.pictureBox214.TabStop = false;
             this.pictureBox214.Tag = "food";
             // 
+            // lbl_guide1
+            // 
+            resources.ApplyResources(this.lbl_guide1, "lbl_guide1");
+            this.lbl_guide1.Name = "lbl_guide1";
+            // 
+            // lbl_guide2
+            // 
+            resources.ApplyResources(this.lbl_guide2, "lbl_guide2");
+            this.lbl_guide2.Name = "lbl_guide2";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.CancelButton = this.button_stop;
+            this.Controls.Add(this.lbl_guide2);
+            this.Controls.Add(this.lbl_guide1);
             this.Controls.Add(this.pictureBox_pacman);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -2568,18 +2524,14 @@
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button_stop);
             this.Controls.Add(this.label_score);
-            this.Controls.Add(this.button_left);
-            this.Controls.Add(this.button_right);
-            this.Controls.Add(this.button_down);
-            this.Controls.Add(this.button_up);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Tag = "food";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pacman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -2807,14 +2759,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button_up;
-        private System.Windows.Forms.Button button_down;
-        private System.Windows.Forms.Button button_right;
-        private System.Windows.Forms.Button button_left;
         private System.Windows.Forms.PictureBox pictureBox_pacman;
         private System.Windows.Forms.Label label_score;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button_stop;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -3040,6 +2987,8 @@
         private System.Windows.Forms.PictureBox pictureBox212;
         private System.Windows.Forms.PictureBox pictureBox213;
         private System.Windows.Forms.PictureBox pictureBox214;
+        private System.Windows.Forms.Label lbl_guide1;
+        private System.Windows.Forms.Label lbl_guide2;
 
     }
 }
