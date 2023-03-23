@@ -1,2 +1,2 @@
-### pacman with C# windows form 2012
+### pacman Game
 ![screenshot](screenshot.png)
