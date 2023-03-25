@@ -484,7 +484,6 @@
             // 
             // label_score
             // 
-            this.label_score.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.label_score, "label_score");
             this.label_score.Name = "label_score";
             // 
@@ -503,6 +502,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::pacman.Properties.Resources._12_2_;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
@@ -511,6 +511,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::pacman.Properties.Resources._14;
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
@@ -519,6 +520,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::pacman.Properties.Resources._15;
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
@@ -527,6 +529,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::pacman.Properties.Resources._11;
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
@@ -535,6 +538,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::pacman.Properties.Resources._16;
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
@@ -543,6 +547,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::pacman.Properties.Resources._1;
             resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Name = "pictureBox7";
@@ -551,6 +556,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::pacman.Properties.Resources._1;
             resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.Name = "pictureBox8";
@@ -559,6 +565,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = global::pacman.Properties.Resources._3;
             resources.ApplyResources(this.pictureBox11, "pictureBox11");
             this.pictureBox11.Name = "pictureBox11";
@@ -567,6 +574,7 @@
             // 
             // pictureBox12
             // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.Image = global::pacman.Properties.Resources._3;
             resources.ApplyResources(this.pictureBox12, "pictureBox12");
             this.pictureBox12.Name = "pictureBox12";
@@ -575,6 +583,7 @@
             // 
             // pictureBox13
             // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox13.Image = global::pacman.Properties.Resources._7;
             resources.ApplyResources(this.pictureBox13, "pictureBox13");
             this.pictureBox13.Name = "pictureBox13";
@@ -583,6 +592,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -590,6 +600,7 @@
             // 
             // pictureBox14
             // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox14.Image = global::pacman.Properties.Resources._5_1_;
             resources.ApplyResources(this.pictureBox14, "pictureBox14");
             this.pictureBox14.Name = "pictureBox14";
@@ -598,6 +609,7 @@
             // 
             // pictureBox15
             // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.Image = global::pacman.Properties.Resources._5_2_;
             resources.ApplyResources(this.pictureBox15, "pictureBox15");
             this.pictureBox15.Name = "pictureBox15";
@@ -606,6 +618,7 @@
             // 
             // pictureBox16
             // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox16.Image = global::pacman.Properties.Resources._17;
             resources.ApplyResources(this.pictureBox16, "pictureBox16");
             this.pictureBox16.Name = "pictureBox16";
@@ -614,6 +627,7 @@
             // 
             // pictureBox17
             // 
+            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.Image = global::pacman.Properties.Resources._18;
             resources.ApplyResources(this.pictureBox17, "pictureBox17");
             this.pictureBox17.Name = "pictureBox17";
@@ -622,6 +636,7 @@
             // 
             // pictureBox18
             // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.Image = global::pacman.Properties.Resources._14;
             resources.ApplyResources(this.pictureBox18, "pictureBox18");
             this.pictureBox18.Name = "pictureBox18";
@@ -630,6 +645,7 @@
             // 
             // pictureBox19
             // 
+            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.Image = global::pacman.Properties.Resources._19;
             resources.ApplyResources(this.pictureBox19, "pictureBox19");
             this.pictureBox19.Name = "pictureBox19";
@@ -638,6 +654,7 @@
             // 
             // pictureBox20
             // 
+            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox20.Image = global::pacman.Properties.Resources._15;
             resources.ApplyResources(this.pictureBox20, "pictureBox20");
             this.pictureBox20.Name = "pictureBox20";
@@ -646,6 +663,7 @@
             // 
             // pictureBox21
             // 
+            this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox21.Image = global::pacman.Properties.Resources._9_1_;
             resources.ApplyResources(this.pictureBox21, "pictureBox21");
             this.pictureBox21.Name = "pictureBox21";
@@ -654,6 +672,7 @@
             // 
             // pictureBox22
             // 
+            this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox22.Image = global::pacman.Properties.Resources._9_2_;
             resources.ApplyResources(this.pictureBox22, "pictureBox22");
             this.pictureBox22.Name = "pictureBox22";
@@ -662,6 +681,7 @@
             // 
             // pictureBox23
             // 
+            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox23.Image = global::pacman.Properties.Resources._10_1_;
             resources.ApplyResources(this.pictureBox23, "pictureBox23");
             this.pictureBox23.Name = "pictureBox23";
@@ -670,6 +690,7 @@
             // 
             // pictureBox24
             // 
+            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox24.Image = global::pacman.Properties.Resources._10_2_;
             resources.ApplyResources(this.pictureBox24, "pictureBox24");
             this.pictureBox24.Name = "pictureBox24";
@@ -678,6 +699,7 @@
             // 
             // pictureBox27
             // 
+            this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox27.Image = global::pacman.Properties.Resources._3;
             resources.ApplyResources(this.pictureBox27, "pictureBox27");
             this.pictureBox27.Name = "pictureBox27";
@@ -706,6 +728,7 @@
             // 
             // pictureBox205
             // 
+            this.pictureBox205.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox205.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox205, "pictureBox205");
             this.pictureBox205.Name = "pictureBox205";
@@ -714,6 +737,7 @@
             // 
             // pictureBox206
             // 
+            this.pictureBox206.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox206.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox206, "pictureBox206");
             this.pictureBox206.Name = "pictureBox206";
@@ -722,6 +746,7 @@
             // 
             // pictureBox207
             // 
+            this.pictureBox207.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox207.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox207, "pictureBox207");
             this.pictureBox207.Name = "pictureBox207";
@@ -730,6 +755,7 @@
             // 
             // pictureBox208
             // 
+            this.pictureBox208.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox208.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox208, "pictureBox208");
             this.pictureBox208.Name = "pictureBox208";
@@ -738,6 +764,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = global::pacman.Properties.Resources._4;
             resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Name = "pictureBox9";
@@ -746,6 +773,7 @@
             // 
             // pictureBox209
             // 
+            this.pictureBox209.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox209.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox209, "pictureBox209");
             this.pictureBox209.Name = "pictureBox209";
@@ -754,6 +782,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox10, "pictureBox10");
             this.pictureBox10.Name = "pictureBox10";
@@ -762,6 +791,7 @@
             // 
             // pictureBox25
             // 
+            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox25.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox25, "pictureBox25");
             this.pictureBox25.Name = "pictureBox25";
@@ -770,6 +800,7 @@
             // 
             // pictureBox26
             // 
+            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox26.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox26, "pictureBox26");
             this.pictureBox26.Name = "pictureBox26";
@@ -778,6 +809,7 @@
             // 
             // pictureBox28
             // 
+            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox28.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox28, "pictureBox28");
             this.pictureBox28.Name = "pictureBox28";
@@ -786,6 +818,7 @@
             // 
             // pictureBox29
             // 
+            this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox29.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox29, "pictureBox29");
             this.pictureBox29.Name = "pictureBox29";
@@ -794,6 +827,7 @@
             // 
             // pictureBox30
             // 
+            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox30.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox30, "pictureBox30");
             this.pictureBox30.Name = "pictureBox30";
@@ -802,6 +836,7 @@
             // 
             // pictureBox31
             // 
+            this.pictureBox31.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox31.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox31, "pictureBox31");
             this.pictureBox31.Name = "pictureBox31";
@@ -810,6 +845,7 @@
             // 
             // pictureBox32
             // 
+            this.pictureBox32.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox32.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox32, "pictureBox32");
             this.pictureBox32.Name = "pictureBox32";
@@ -818,6 +854,7 @@
             // 
             // pictureBox33
             // 
+            this.pictureBox33.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox33.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox33, "pictureBox33");
             this.pictureBox33.Name = "pictureBox33";
@@ -826,6 +863,7 @@
             // 
             // pictureBox34
             // 
+            this.pictureBox34.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox34.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox34, "pictureBox34");
             this.pictureBox34.Name = "pictureBox34";
@@ -834,6 +872,7 @@
             // 
             // pictureBox35
             // 
+            this.pictureBox35.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox35.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox35, "pictureBox35");
             this.pictureBox35.Name = "pictureBox35";
@@ -842,6 +881,7 @@
             // 
             // pictureBox36
             // 
+            this.pictureBox36.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox36.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox36, "pictureBox36");
             this.pictureBox36.Name = "pictureBox36";
@@ -850,6 +890,7 @@
             // 
             // pictureBox37
             // 
+            this.pictureBox37.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox37.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox37, "pictureBox37");
             this.pictureBox37.Name = "pictureBox37";
@@ -858,6 +899,7 @@
             // 
             // pictureBox38
             // 
+            this.pictureBox38.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox38.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox38, "pictureBox38");
             this.pictureBox38.Name = "pictureBox38";
@@ -866,6 +908,7 @@
             // 
             // pictureBox39
             // 
+            this.pictureBox39.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox39.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox39, "pictureBox39");
             this.pictureBox39.Name = "pictureBox39";
@@ -874,6 +917,7 @@
             // 
             // pictureBox40
             // 
+            this.pictureBox40.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox40.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox40, "pictureBox40");
             this.pictureBox40.Name = "pictureBox40";
@@ -882,6 +926,7 @@
             // 
             // pictureBox41
             // 
+            this.pictureBox41.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox41.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox41, "pictureBox41");
             this.pictureBox41.Name = "pictureBox41";
@@ -890,6 +935,7 @@
             // 
             // pictureBox42
             // 
+            this.pictureBox42.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox42.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox42, "pictureBox42");
             this.pictureBox42.Name = "pictureBox42";
@@ -898,6 +944,7 @@
             // 
             // pictureBox43
             // 
+            this.pictureBox43.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox43.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox43, "pictureBox43");
             this.pictureBox43.Name = "pictureBox43";
@@ -906,6 +953,7 @@
             // 
             // pictureBox44
             // 
+            this.pictureBox44.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox44.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox44, "pictureBox44");
             this.pictureBox44.Name = "pictureBox44";
@@ -914,6 +962,7 @@
             // 
             // pictureBox45
             // 
+            this.pictureBox45.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox45.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox45, "pictureBox45");
             this.pictureBox45.Name = "pictureBox45";
@@ -922,6 +971,7 @@
             // 
             // pictureBox46
             // 
+            this.pictureBox46.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox46.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox46, "pictureBox46");
             this.pictureBox46.Name = "pictureBox46";
@@ -930,6 +980,7 @@
             // 
             // pictureBox47
             // 
+            this.pictureBox47.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox47.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox47, "pictureBox47");
             this.pictureBox47.Name = "pictureBox47";
@@ -938,6 +989,7 @@
             // 
             // pictureBox48
             // 
+            this.pictureBox48.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox48.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox48, "pictureBox48");
             this.pictureBox48.Name = "pictureBox48";
@@ -946,6 +998,7 @@
             // 
             // pictureBox49
             // 
+            this.pictureBox49.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox49.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox49, "pictureBox49");
             this.pictureBox49.Name = "pictureBox49";
@@ -954,6 +1007,7 @@
             // 
             // pictureBox50
             // 
+            this.pictureBox50.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox50.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox50, "pictureBox50");
             this.pictureBox50.Name = "pictureBox50";
@@ -962,6 +1016,7 @@
             // 
             // pictureBox51
             // 
+            this.pictureBox51.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox51.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox51, "pictureBox51");
             this.pictureBox51.Name = "pictureBox51";
@@ -970,6 +1025,7 @@
             // 
             // pictureBox52
             // 
+            this.pictureBox52.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox52.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox52, "pictureBox52");
             this.pictureBox52.Name = "pictureBox52";
@@ -978,6 +1034,7 @@
             // 
             // pictureBox53
             // 
+            this.pictureBox53.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox53.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox53, "pictureBox53");
             this.pictureBox53.Name = "pictureBox53";
@@ -986,6 +1043,7 @@
             // 
             // pictureBox54
             // 
+            this.pictureBox54.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox54.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox54, "pictureBox54");
             this.pictureBox54.Name = "pictureBox54";
@@ -994,6 +1052,7 @@
             // 
             // pictureBox55
             // 
+            this.pictureBox55.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox55.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox55, "pictureBox55");
             this.pictureBox55.Name = "pictureBox55";
@@ -1002,6 +1061,7 @@
             // 
             // pictureBox56
             // 
+            this.pictureBox56.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox56.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox56, "pictureBox56");
             this.pictureBox56.Name = "pictureBox56";
@@ -1010,6 +1070,7 @@
             // 
             // pictureBox57
             // 
+            this.pictureBox57.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox57.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox57, "pictureBox57");
             this.pictureBox57.Name = "pictureBox57";
@@ -1018,6 +1079,7 @@
             // 
             // pictureBox58
             // 
+            this.pictureBox58.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox58.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox58, "pictureBox58");
             this.pictureBox58.Name = "pictureBox58";
@@ -1026,6 +1088,7 @@
             // 
             // pictureBox59
             // 
+            this.pictureBox59.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox59.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox59, "pictureBox59");
             this.pictureBox59.Name = "pictureBox59";
@@ -1034,6 +1097,7 @@
             // 
             // pictureBox60
             // 
+            this.pictureBox60.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox60.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox60, "pictureBox60");
             this.pictureBox60.Name = "pictureBox60";
@@ -1042,6 +1106,7 @@
             // 
             // pictureBox61
             // 
+            this.pictureBox61.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox61.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox61, "pictureBox61");
             this.pictureBox61.Name = "pictureBox61";
@@ -1050,6 +1115,7 @@
             // 
             // pictureBox62
             // 
+            this.pictureBox62.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox62.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox62, "pictureBox62");
             this.pictureBox62.Name = "pictureBox62";
@@ -1058,6 +1124,7 @@
             // 
             // pictureBox63
             // 
+            this.pictureBox63.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox63.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox63, "pictureBox63");
             this.pictureBox63.Name = "pictureBox63";
@@ -1066,6 +1133,7 @@
             // 
             // pictureBox64
             // 
+            this.pictureBox64.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox64.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox64, "pictureBox64");
             this.pictureBox64.Name = "pictureBox64";
@@ -1074,6 +1142,7 @@
             // 
             // pictureBox65
             // 
+            this.pictureBox65.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox65.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox65, "pictureBox65");
             this.pictureBox65.Name = "pictureBox65";
@@ -1082,6 +1151,7 @@
             // 
             // pictureBox66
             // 
+            this.pictureBox66.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox66.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox66, "pictureBox66");
             this.pictureBox66.Name = "pictureBox66";
@@ -1090,6 +1160,7 @@
             // 
             // pictureBox67
             // 
+            this.pictureBox67.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox67.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox67, "pictureBox67");
             this.pictureBox67.Name = "pictureBox67";
@@ -1098,6 +1169,7 @@
             // 
             // pictureBox68
             // 
+            this.pictureBox68.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox68.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox68, "pictureBox68");
             this.pictureBox68.Name = "pictureBox68";
@@ -1106,6 +1178,7 @@
             // 
             // pictureBox69
             // 
+            this.pictureBox69.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox69.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox69, "pictureBox69");
             this.pictureBox69.Name = "pictureBox69";
@@ -1114,6 +1187,7 @@
             // 
             // pictureBox70
             // 
+            this.pictureBox70.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox70.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox70, "pictureBox70");
             this.pictureBox70.Name = "pictureBox70";
@@ -1122,6 +1196,7 @@
             // 
             // pictureBox71
             // 
+            this.pictureBox71.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox71.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox71, "pictureBox71");
             this.pictureBox71.Name = "pictureBox71";
@@ -1130,6 +1205,7 @@
             // 
             // pictureBox72
             // 
+            this.pictureBox72.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox72.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox72, "pictureBox72");
             this.pictureBox72.Name = "pictureBox72";
@@ -1138,6 +1214,7 @@
             // 
             // pictureBox73
             // 
+            this.pictureBox73.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox73.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox73, "pictureBox73");
             this.pictureBox73.Name = "pictureBox73";
@@ -1146,6 +1223,7 @@
             // 
             // pictureBox74
             // 
+            this.pictureBox74.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox74.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox74, "pictureBox74");
             this.pictureBox74.Name = "pictureBox74";
@@ -1154,6 +1232,7 @@
             // 
             // pictureBox75
             // 
+            this.pictureBox75.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox75.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox75, "pictureBox75");
             this.pictureBox75.Name = "pictureBox75";
@@ -1162,6 +1241,7 @@
             // 
             // pictureBox76
             // 
+            this.pictureBox76.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox76.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox76, "pictureBox76");
             this.pictureBox76.Name = "pictureBox76";
@@ -1170,6 +1250,7 @@
             // 
             // pictureBox77
             // 
+            this.pictureBox77.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox77.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox77, "pictureBox77");
             this.pictureBox77.Name = "pictureBox77";
@@ -1178,6 +1259,7 @@
             // 
             // pictureBox78
             // 
+            this.pictureBox78.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox78.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox78, "pictureBox78");
             this.pictureBox78.Name = "pictureBox78";
@@ -1186,6 +1268,7 @@
             // 
             // pictureBox79
             // 
+            this.pictureBox79.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox79.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox79, "pictureBox79");
             this.pictureBox79.Name = "pictureBox79";
@@ -1194,6 +1277,7 @@
             // 
             // pictureBox80
             // 
+            this.pictureBox80.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox80.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox80, "pictureBox80");
             this.pictureBox80.Name = "pictureBox80";
@@ -1202,6 +1286,7 @@
             // 
             // pictureBox81
             // 
+            this.pictureBox81.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox81.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox81, "pictureBox81");
             this.pictureBox81.Name = "pictureBox81";
@@ -1210,6 +1295,7 @@
             // 
             // pictureBox82
             // 
+            this.pictureBox82.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox82.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox82, "pictureBox82");
             this.pictureBox82.Name = "pictureBox82";
@@ -1218,6 +1304,7 @@
             // 
             // pictureBox83
             // 
+            this.pictureBox83.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox83.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox83, "pictureBox83");
             this.pictureBox83.Name = "pictureBox83";
@@ -1226,6 +1313,7 @@
             // 
             // pictureBox84
             // 
+            this.pictureBox84.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox84.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox84, "pictureBox84");
             this.pictureBox84.Name = "pictureBox84";
@@ -1234,6 +1322,7 @@
             // 
             // pictureBox85
             // 
+            this.pictureBox85.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox85.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox85, "pictureBox85");
             this.pictureBox85.Name = "pictureBox85";
@@ -1242,6 +1331,7 @@
             // 
             // pictureBox86
             // 
+            this.pictureBox86.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox86.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox86, "pictureBox86");
             this.pictureBox86.Name = "pictureBox86";
@@ -1250,6 +1340,7 @@
             // 
             // pictureBox87
             // 
+            this.pictureBox87.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox87.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox87, "pictureBox87");
             this.pictureBox87.Name = "pictureBox87";
@@ -1258,6 +1349,7 @@
             // 
             // pictureBox88
             // 
+            this.pictureBox88.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox88.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox88, "pictureBox88");
             this.pictureBox88.Name = "pictureBox88";
@@ -1266,6 +1358,7 @@
             // 
             // pictureBox89
             // 
+            this.pictureBox89.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox89.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox89, "pictureBox89");
             this.pictureBox89.Name = "pictureBox89";
@@ -1274,6 +1367,7 @@
             // 
             // pictureBox90
             // 
+            this.pictureBox90.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox90.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox90, "pictureBox90");
             this.pictureBox90.Name = "pictureBox90";
@@ -1282,6 +1376,7 @@
             // 
             // pictureBox91
             // 
+            this.pictureBox91.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox91.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox91, "pictureBox91");
             this.pictureBox91.Name = "pictureBox91";
@@ -1290,6 +1385,7 @@
             // 
             // pictureBox92
             // 
+            this.pictureBox92.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox92.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox92, "pictureBox92");
             this.pictureBox92.Name = "pictureBox92";
@@ -1298,6 +1394,7 @@
             // 
             // pictureBox93
             // 
+            this.pictureBox93.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox93.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox93, "pictureBox93");
             this.pictureBox93.Name = "pictureBox93";
@@ -1306,6 +1403,7 @@
             // 
             // pictureBox94
             // 
+            this.pictureBox94.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox94.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox94, "pictureBox94");
             this.pictureBox94.Name = "pictureBox94";
@@ -1314,6 +1412,7 @@
             // 
             // pictureBox95
             // 
+            this.pictureBox95.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox95.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox95, "pictureBox95");
             this.pictureBox95.Name = "pictureBox95";
@@ -1322,6 +1421,7 @@
             // 
             // pictureBox96
             // 
+            this.pictureBox96.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox96.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox96, "pictureBox96");
             this.pictureBox96.Name = "pictureBox96";
@@ -1330,6 +1430,7 @@
             // 
             // pictureBox97
             // 
+            this.pictureBox97.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox97.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox97, "pictureBox97");
             this.pictureBox97.Name = "pictureBox97";
@@ -1338,6 +1439,7 @@
             // 
             // pictureBox98
             // 
+            this.pictureBox98.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox98.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox98, "pictureBox98");
             this.pictureBox98.Name = "pictureBox98";
@@ -1346,6 +1448,7 @@
             // 
             // pictureBox99
             // 
+            this.pictureBox99.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox99.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox99, "pictureBox99");
             this.pictureBox99.Name = "pictureBox99";
@@ -1354,6 +1457,7 @@
             // 
             // pictureBox100
             // 
+            this.pictureBox100.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox100.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox100, "pictureBox100");
             this.pictureBox100.Name = "pictureBox100";
@@ -1362,6 +1466,7 @@
             // 
             // pictureBox101
             // 
+            this.pictureBox101.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox101.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox101, "pictureBox101");
             this.pictureBox101.Name = "pictureBox101";
@@ -1370,6 +1475,7 @@
             // 
             // pictureBox102
             // 
+            this.pictureBox102.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox102.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox102, "pictureBox102");
             this.pictureBox102.Name = "pictureBox102";
@@ -1378,6 +1484,7 @@
             // 
             // pictureBox103
             // 
+            this.pictureBox103.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox103.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox103, "pictureBox103");
             this.pictureBox103.Name = "pictureBox103";
@@ -1386,6 +1493,7 @@
             // 
             // pictureBox104
             // 
+            this.pictureBox104.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox104.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox104, "pictureBox104");
             this.pictureBox104.Name = "pictureBox104";
@@ -1394,6 +1502,7 @@
             // 
             // pictureBox105
             // 
+            this.pictureBox105.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox105.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox105, "pictureBox105");
             this.pictureBox105.Name = "pictureBox105";
@@ -1402,6 +1511,7 @@
             // 
             // pictureBox106
             // 
+            this.pictureBox106.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox106.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox106, "pictureBox106");
             this.pictureBox106.Name = "pictureBox106";
@@ -1410,6 +1520,7 @@
             // 
             // pictureBox107
             // 
+            this.pictureBox107.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox107.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox107, "pictureBox107");
             this.pictureBox107.Name = "pictureBox107";
@@ -1418,6 +1529,7 @@
             // 
             // pictureBox108
             // 
+            this.pictureBox108.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox108.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox108, "pictureBox108");
             this.pictureBox108.Name = "pictureBox108";
@@ -1426,6 +1538,7 @@
             // 
             // pictureBox109
             // 
+            this.pictureBox109.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox109.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox109, "pictureBox109");
             this.pictureBox109.Name = "pictureBox109";
@@ -1434,6 +1547,7 @@
             // 
             // pictureBox110
             // 
+            this.pictureBox110.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox110.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox110, "pictureBox110");
             this.pictureBox110.Name = "pictureBox110";
@@ -1442,6 +1556,7 @@
             // 
             // pictureBox111
             // 
+            this.pictureBox111.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox111.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox111, "pictureBox111");
             this.pictureBox111.Name = "pictureBox111";
@@ -1450,6 +1565,7 @@
             // 
             // pictureBox112
             // 
+            this.pictureBox112.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox112.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox112, "pictureBox112");
             this.pictureBox112.Name = "pictureBox112";
@@ -1458,6 +1574,7 @@
             // 
             // pictureBox113
             // 
+            this.pictureBox113.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox113.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox113, "pictureBox113");
             this.pictureBox113.Name = "pictureBox113";
@@ -1466,6 +1583,7 @@
             // 
             // pictureBox114
             // 
+            this.pictureBox114.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox114.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox114, "pictureBox114");
             this.pictureBox114.Name = "pictureBox114";
@@ -1474,6 +1592,7 @@
             // 
             // pictureBox115
             // 
+            this.pictureBox115.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox115.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox115, "pictureBox115");
             this.pictureBox115.Name = "pictureBox115";
@@ -1482,6 +1601,7 @@
             // 
             // pictureBox116
             // 
+            this.pictureBox116.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox116.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox116, "pictureBox116");
             this.pictureBox116.Name = "pictureBox116";
@@ -1490,6 +1610,7 @@
             // 
             // pictureBox117
             // 
+            this.pictureBox117.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox117.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox117, "pictureBox117");
             this.pictureBox117.Name = "pictureBox117";
@@ -1498,6 +1619,7 @@
             // 
             // pictureBox118
             // 
+            this.pictureBox118.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox118.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox118, "pictureBox118");
             this.pictureBox118.Name = "pictureBox118";
@@ -1506,6 +1628,7 @@
             // 
             // pictureBox119
             // 
+            this.pictureBox119.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox119.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox119, "pictureBox119");
             this.pictureBox119.Name = "pictureBox119";
@@ -1514,6 +1637,7 @@
             // 
             // pictureBox120
             // 
+            this.pictureBox120.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox120.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox120, "pictureBox120");
             this.pictureBox120.Name = "pictureBox120";
@@ -1522,6 +1646,7 @@
             // 
             // pictureBox122
             // 
+            this.pictureBox122.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox122.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox122, "pictureBox122");
             this.pictureBox122.Name = "pictureBox122";
@@ -1530,6 +1655,7 @@
             // 
             // pictureBox123
             // 
+            this.pictureBox123.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox123.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox123, "pictureBox123");
             this.pictureBox123.Name = "pictureBox123";
@@ -1538,6 +1664,7 @@
             // 
             // pictureBox124
             // 
+            this.pictureBox124.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox124.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox124, "pictureBox124");
             this.pictureBox124.Name = "pictureBox124";
@@ -1546,6 +1673,7 @@
             // 
             // pictureBox125
             // 
+            this.pictureBox125.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox125.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox125, "pictureBox125");
             this.pictureBox125.Name = "pictureBox125";
@@ -1554,6 +1682,7 @@
             // 
             // pictureBox126
             // 
+            this.pictureBox126.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox126.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox126, "pictureBox126");
             this.pictureBox126.Name = "pictureBox126";
@@ -1562,6 +1691,7 @@
             // 
             // pictureBox127
             // 
+            this.pictureBox127.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox127.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox127, "pictureBox127");
             this.pictureBox127.Name = "pictureBox127";
@@ -1570,6 +1700,7 @@
             // 
             // pictureBox121
             // 
+            this.pictureBox121.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox121.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox121, "pictureBox121");
             this.pictureBox121.Name = "pictureBox121";
@@ -1578,6 +1709,7 @@
             // 
             // pictureBox128
             // 
+            this.pictureBox128.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox128.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox128, "pictureBox128");
             this.pictureBox128.Name = "pictureBox128";
@@ -1586,6 +1718,7 @@
             // 
             // pictureBox129
             // 
+            this.pictureBox129.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox129.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox129, "pictureBox129");
             this.pictureBox129.Name = "pictureBox129";
@@ -1594,6 +1727,7 @@
             // 
             // pictureBox130
             // 
+            this.pictureBox130.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox130.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox130, "pictureBox130");
             this.pictureBox130.Name = "pictureBox130";
@@ -1602,6 +1736,7 @@
             // 
             // pictureBox131
             // 
+            this.pictureBox131.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox131.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox131, "pictureBox131");
             this.pictureBox131.Name = "pictureBox131";
@@ -1610,6 +1745,7 @@
             // 
             // pictureBox134
             // 
+            this.pictureBox134.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox134.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox134, "pictureBox134");
             this.pictureBox134.Name = "pictureBox134";
@@ -1618,6 +1754,7 @@
             // 
             // pictureBox135
             // 
+            this.pictureBox135.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox135.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox135, "pictureBox135");
             this.pictureBox135.Name = "pictureBox135";
@@ -1626,6 +1763,7 @@
             // 
             // pictureBox136
             // 
+            this.pictureBox136.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox136.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox136, "pictureBox136");
             this.pictureBox136.Name = "pictureBox136";
@@ -1634,6 +1772,7 @@
             // 
             // pictureBox132
             // 
+            this.pictureBox132.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox132.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox132, "pictureBox132");
             this.pictureBox132.Name = "pictureBox132";
@@ -1642,6 +1781,7 @@
             // 
             // pictureBox133
             // 
+            this.pictureBox133.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox133.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox133, "pictureBox133");
             this.pictureBox133.Name = "pictureBox133";
@@ -1650,6 +1790,7 @@
             // 
             // pictureBox137
             // 
+            this.pictureBox137.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox137.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox137, "pictureBox137");
             this.pictureBox137.Name = "pictureBox137";
@@ -1658,6 +1799,7 @@
             // 
             // pictureBox138
             // 
+            this.pictureBox138.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox138.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox138, "pictureBox138");
             this.pictureBox138.Name = "pictureBox138";
@@ -1666,6 +1808,7 @@
             // 
             // pictureBox139
             // 
+            this.pictureBox139.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox139.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox139, "pictureBox139");
             this.pictureBox139.Name = "pictureBox139";
@@ -1674,6 +1817,7 @@
             // 
             // pictureBox140
             // 
+            this.pictureBox140.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox140.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox140, "pictureBox140");
             this.pictureBox140.Name = "pictureBox140";
@@ -1682,6 +1826,7 @@
             // 
             // pictureBox141
             // 
+            this.pictureBox141.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox141.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox141, "pictureBox141");
             this.pictureBox141.Name = "pictureBox141";
@@ -1690,6 +1835,7 @@
             // 
             // pictureBox142
             // 
+            this.pictureBox142.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox142.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox142, "pictureBox142");
             this.pictureBox142.Name = "pictureBox142";
@@ -1698,6 +1844,7 @@
             // 
             // pictureBox143
             // 
+            this.pictureBox143.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox143.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox143, "pictureBox143");
             this.pictureBox143.Name = "pictureBox143";
@@ -1706,6 +1853,7 @@
             // 
             // pictureBox144
             // 
+            this.pictureBox144.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox144.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox144, "pictureBox144");
             this.pictureBox144.Name = "pictureBox144";
@@ -1714,6 +1862,7 @@
             // 
             // pictureBox145
             // 
+            this.pictureBox145.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox145.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox145, "pictureBox145");
             this.pictureBox145.Name = "pictureBox145";
@@ -1722,6 +1871,7 @@
             // 
             // pictureBox146
             // 
+            this.pictureBox146.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox146.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox146, "pictureBox146");
             this.pictureBox146.Name = "pictureBox146";
@@ -1730,6 +1880,7 @@
             // 
             // pictureBox147
             // 
+            this.pictureBox147.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox147.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox147, "pictureBox147");
             this.pictureBox147.Name = "pictureBox147";
@@ -1738,6 +1889,7 @@
             // 
             // pictureBox148
             // 
+            this.pictureBox148.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox148.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox148, "pictureBox148");
             this.pictureBox148.Name = "pictureBox148";
@@ -1746,6 +1898,7 @@
             // 
             // pictureBox149
             // 
+            this.pictureBox149.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox149.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox149, "pictureBox149");
             this.pictureBox149.Name = "pictureBox149";
@@ -1754,6 +1907,7 @@
             // 
             // pictureBox150
             // 
+            this.pictureBox150.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox150.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox150, "pictureBox150");
             this.pictureBox150.Name = "pictureBox150";
@@ -1762,6 +1916,7 @@
             // 
             // pictureBox151
             // 
+            this.pictureBox151.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox151.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox151, "pictureBox151");
             this.pictureBox151.Name = "pictureBox151";
@@ -1770,6 +1925,7 @@
             // 
             // pictureBox152
             // 
+            this.pictureBox152.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox152.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox152, "pictureBox152");
             this.pictureBox152.Name = "pictureBox152";
@@ -1778,6 +1934,7 @@
             // 
             // pictureBox153
             // 
+            this.pictureBox153.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox153.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox153, "pictureBox153");
             this.pictureBox153.Name = "pictureBox153";
@@ -1786,6 +1943,7 @@
             // 
             // pictureBox154
             // 
+            this.pictureBox154.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox154.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox154, "pictureBox154");
             this.pictureBox154.Name = "pictureBox154";
@@ -1794,6 +1952,7 @@
             // 
             // pictureBox155
             // 
+            this.pictureBox155.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox155.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox155, "pictureBox155");
             this.pictureBox155.Name = "pictureBox155";
@@ -1802,6 +1961,7 @@
             // 
             // pictureBox156
             // 
+            this.pictureBox156.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox156.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox156, "pictureBox156");
             this.pictureBox156.Name = "pictureBox156";
@@ -1810,6 +1970,7 @@
             // 
             // pictureBox157
             // 
+            this.pictureBox157.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox157.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox157, "pictureBox157");
             this.pictureBox157.Name = "pictureBox157";
@@ -1818,6 +1979,7 @@
             // 
             // pictureBox158
             // 
+            this.pictureBox158.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox158.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox158, "pictureBox158");
             this.pictureBox158.Name = "pictureBox158";
@@ -1826,6 +1988,7 @@
             // 
             // pictureBox159
             // 
+            this.pictureBox159.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox159.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox159, "pictureBox159");
             this.pictureBox159.Name = "pictureBox159";
@@ -1834,6 +1997,7 @@
             // 
             // pictureBox160
             // 
+            this.pictureBox160.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox160.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox160, "pictureBox160");
             this.pictureBox160.Name = "pictureBox160";
@@ -1842,6 +2006,7 @@
             // 
             // pictureBox161
             // 
+            this.pictureBox161.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox161.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox161, "pictureBox161");
             this.pictureBox161.Name = "pictureBox161";
@@ -1850,6 +2015,7 @@
             // 
             // pictureBox162
             // 
+            this.pictureBox162.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox162.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox162, "pictureBox162");
             this.pictureBox162.Name = "pictureBox162";
@@ -1858,6 +2024,7 @@
             // 
             // pictureBox163
             // 
+            this.pictureBox163.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox163.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox163, "pictureBox163");
             this.pictureBox163.Name = "pictureBox163";
@@ -1866,6 +2033,7 @@
             // 
             // pictureBox164
             // 
+            this.pictureBox164.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox164.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox164, "pictureBox164");
             this.pictureBox164.Name = "pictureBox164";
@@ -1874,6 +2042,7 @@
             // 
             // pictureBox165
             // 
+            this.pictureBox165.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox165.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox165, "pictureBox165");
             this.pictureBox165.Name = "pictureBox165";
@@ -1882,6 +2051,7 @@
             // 
             // pictureBox166
             // 
+            this.pictureBox166.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox166.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox166, "pictureBox166");
             this.pictureBox166.Name = "pictureBox166";
@@ -1890,6 +2060,7 @@
             // 
             // pictureBox167
             // 
+            this.pictureBox167.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox167.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox167, "pictureBox167");
             this.pictureBox167.Name = "pictureBox167";
@@ -1898,6 +2069,7 @@
             // 
             // pictureBox168
             // 
+            this.pictureBox168.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox168.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox168, "pictureBox168");
             this.pictureBox168.Name = "pictureBox168";
@@ -1906,6 +2078,7 @@
             // 
             // pictureBox169
             // 
+            this.pictureBox169.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox169.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox169, "pictureBox169");
             this.pictureBox169.Name = "pictureBox169";
@@ -1914,6 +2087,7 @@
             // 
             // pictureBox170
             // 
+            this.pictureBox170.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox170.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox170, "pictureBox170");
             this.pictureBox170.Name = "pictureBox170";
@@ -1922,6 +2096,7 @@
             // 
             // pictureBox171
             // 
+            this.pictureBox171.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox171.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox171, "pictureBox171");
             this.pictureBox171.Name = "pictureBox171";
@@ -1930,6 +2105,7 @@
             // 
             // pictureBox172
             // 
+            this.pictureBox172.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox172.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox172, "pictureBox172");
             this.pictureBox172.Name = "pictureBox172";
@@ -1938,6 +2114,7 @@
             // 
             // pictureBox173
             // 
+            this.pictureBox173.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox173.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox173, "pictureBox173");
             this.pictureBox173.Name = "pictureBox173";
@@ -1946,6 +2123,7 @@
             // 
             // pictureBox174
             // 
+            this.pictureBox174.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox174.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox174, "pictureBox174");
             this.pictureBox174.Name = "pictureBox174";
@@ -1954,6 +2132,7 @@
             // 
             // pictureBox175
             // 
+            this.pictureBox175.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox175.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox175, "pictureBox175");
             this.pictureBox175.Name = "pictureBox175";
@@ -1962,6 +2141,7 @@
             // 
             // pictureBox176
             // 
+            this.pictureBox176.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox176.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox176, "pictureBox176");
             this.pictureBox176.Name = "pictureBox176";
@@ -1970,6 +2150,7 @@
             // 
             // pictureBox177
             // 
+            this.pictureBox177.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox177.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox177, "pictureBox177");
             this.pictureBox177.Name = "pictureBox177";
@@ -1978,6 +2159,7 @@
             // 
             // pictureBox178
             // 
+            this.pictureBox178.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox178.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox178, "pictureBox178");
             this.pictureBox178.Name = "pictureBox178";
@@ -1986,6 +2168,7 @@
             // 
             // pictureBox179
             // 
+            this.pictureBox179.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox179.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox179, "pictureBox179");
             this.pictureBox179.Name = "pictureBox179";
@@ -1994,6 +2177,7 @@
             // 
             // pictureBox180
             // 
+            this.pictureBox180.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox180.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox180, "pictureBox180");
             this.pictureBox180.Name = "pictureBox180";
@@ -2002,6 +2186,7 @@
             // 
             // pictureBox181
             // 
+            this.pictureBox181.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox181.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox181, "pictureBox181");
             this.pictureBox181.Name = "pictureBox181";
@@ -2010,6 +2195,7 @@
             // 
             // pictureBox182
             // 
+            this.pictureBox182.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox182.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox182, "pictureBox182");
             this.pictureBox182.Name = "pictureBox182";
@@ -2018,6 +2204,7 @@
             // 
             // pictureBox183
             // 
+            this.pictureBox183.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox183.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox183, "pictureBox183");
             this.pictureBox183.Name = "pictureBox183";
@@ -2026,6 +2213,7 @@
             // 
             // pictureBox184
             // 
+            this.pictureBox184.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox184.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox184, "pictureBox184");
             this.pictureBox184.Name = "pictureBox184";
@@ -2034,6 +2222,7 @@
             // 
             // pictureBox185
             // 
+            this.pictureBox185.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox185.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox185, "pictureBox185");
             this.pictureBox185.Name = "pictureBox185";
@@ -2042,6 +2231,7 @@
             // 
             // pictureBox186
             // 
+            this.pictureBox186.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox186.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox186, "pictureBox186");
             this.pictureBox186.Name = "pictureBox186";
@@ -2050,6 +2240,7 @@
             // 
             // pictureBox187
             // 
+            this.pictureBox187.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox187.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox187, "pictureBox187");
             this.pictureBox187.Name = "pictureBox187";
@@ -2058,6 +2249,7 @@
             // 
             // pictureBox188
             // 
+            this.pictureBox188.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox188.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox188, "pictureBox188");
             this.pictureBox188.Name = "pictureBox188";
@@ -2066,6 +2258,7 @@
             // 
             // pictureBox189
             // 
+            this.pictureBox189.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox189.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox189, "pictureBox189");
             this.pictureBox189.Name = "pictureBox189";
@@ -2074,6 +2267,7 @@
             // 
             // pictureBox190
             // 
+            this.pictureBox190.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox190.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox190, "pictureBox190");
             this.pictureBox190.Name = "pictureBox190";
@@ -2082,6 +2276,7 @@
             // 
             // pictureBox191
             // 
+            this.pictureBox191.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox191.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox191, "pictureBox191");
             this.pictureBox191.Name = "pictureBox191";
@@ -2090,6 +2285,7 @@
             // 
             // pictureBox192
             // 
+            this.pictureBox192.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox192.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox192, "pictureBox192");
             this.pictureBox192.Name = "pictureBox192";
@@ -2098,6 +2294,7 @@
             // 
             // pictureBox193
             // 
+            this.pictureBox193.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox193.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox193, "pictureBox193");
             this.pictureBox193.Name = "pictureBox193";
@@ -2106,6 +2303,7 @@
             // 
             // pictureBox194
             // 
+            this.pictureBox194.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox194.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox194, "pictureBox194");
             this.pictureBox194.Name = "pictureBox194";
@@ -2114,6 +2312,7 @@
             // 
             // pictureBox195
             // 
+            this.pictureBox195.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox195.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox195, "pictureBox195");
             this.pictureBox195.Name = "pictureBox195";
@@ -2122,6 +2321,7 @@
             // 
             // pictureBox196
             // 
+            this.pictureBox196.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox196.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox196, "pictureBox196");
             this.pictureBox196.Name = "pictureBox196";
@@ -2130,6 +2330,7 @@
             // 
             // pictureBox197
             // 
+            this.pictureBox197.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox197.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox197, "pictureBox197");
             this.pictureBox197.Name = "pictureBox197";
@@ -2138,6 +2339,7 @@
             // 
             // pictureBox198
             // 
+            this.pictureBox198.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox198.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox198, "pictureBox198");
             this.pictureBox198.Name = "pictureBox198";
@@ -2146,6 +2348,7 @@
             // 
             // pictureBox199
             // 
+            this.pictureBox199.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox199.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox199, "pictureBox199");
             this.pictureBox199.Name = "pictureBox199";
@@ -2154,6 +2357,7 @@
             // 
             // pictureBox201
             // 
+            this.pictureBox201.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox201.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox201, "pictureBox201");
             this.pictureBox201.Name = "pictureBox201";
@@ -2162,6 +2366,7 @@
             // 
             // pictureBox200
             // 
+            this.pictureBox200.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox200.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox200, "pictureBox200");
             this.pictureBox200.Name = "pictureBox200";
@@ -2170,6 +2375,7 @@
             // 
             // pictureBox202
             // 
+            this.pictureBox202.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox202.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox202, "pictureBox202");
             this.pictureBox202.Name = "pictureBox202";
@@ -2178,6 +2384,7 @@
             // 
             // pictureBox203
             // 
+            this.pictureBox203.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox203.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox203, "pictureBox203");
             this.pictureBox203.Name = "pictureBox203";
@@ -2186,6 +2393,7 @@
             // 
             // pictureBox204
             // 
+            this.pictureBox204.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox204.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox204, "pictureBox204");
             this.pictureBox204.Name = "pictureBox204";
@@ -2194,6 +2402,7 @@
             // 
             // picGhost1
             // 
+            this.picGhost1.BackColor = System.Drawing.Color.Transparent;
             this.picGhost1.Image = global::pacman.Properties.Resources.ghost_right;
             resources.ApplyResources(this.picGhost1, "picGhost1");
             this.picGhost1.Name = "picGhost1";
@@ -2202,6 +2411,7 @@
             // 
             // pictureBox210
             // 
+            this.pictureBox210.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox210.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox210, "pictureBox210");
             this.pictureBox210.Name = "pictureBox210";
@@ -2210,6 +2420,7 @@
             // 
             // pictureBox211
             // 
+            this.pictureBox211.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox211.Image = global::pacman.Properties.Resources.ghost_right;
             resources.ApplyResources(this.pictureBox211, "pictureBox211");
             this.pictureBox211.Name = "pictureBox211";
@@ -2228,6 +2439,7 @@
             // 
             // picGhost2
             // 
+            this.picGhost2.BackColor = System.Drawing.Color.Transparent;
             this.picGhost2.Image = global::pacman.Properties.Resources.ghost_right;
             resources.ApplyResources(this.picGhost2, "picGhost2");
             this.picGhost2.Name = "picGhost2";
@@ -2260,6 +2472,7 @@
             // 
             // pictureBox212
             // 
+            this.pictureBox212.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox212.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox212, "pictureBox212");
             this.pictureBox212.Name = "pictureBox212";
@@ -2268,6 +2481,7 @@
             // 
             // pictureBox213
             // 
+            this.pictureBox213.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox213.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox213, "pictureBox213");
             this.pictureBox213.Name = "pictureBox213";
@@ -2276,6 +2490,7 @@
             // 
             // pictureBox214
             // 
+            this.pictureBox214.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox214.Image = global::pacman.Properties.Resources.food;
             resources.ApplyResources(this.pictureBox214, "pictureBox214");
             this.pictureBox214.Name = "pictureBox214";
