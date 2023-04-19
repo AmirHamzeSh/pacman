@@ -41,51 +41,49 @@ namespace pacman
             foreach (Control item in this.Controls)
             {   
                 // برخورد پکمن با دیوار ها
-                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "wall")
+                if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds))
                 {
-                    switch (side)
+                    switch ((string)item.Tag)
                     {
-                        //یک حرکت به عقب پس از برخورد به دیوار
-                        case "up": pictureBox_pacman.Top++; break;
-                        case "down": pictureBox_pacman.Top--; break;
-                        case "right": pictureBox_pacman.Left--; break;
-                        case "left": pictureBox_pacman.Left++; break;
-
-                    }
-                    side = "";
-                }
-                //برخورد با غذا
-                else if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "food")
-                {
-                    if (item.Visible)
-                    {
-                        score += 10;
-                        item.Visible = false;
-                        item.Tag = "_food";
-                    }
-                    label_score.Text = "امتیاز:" + score.ToString();
-                }
-
-                //برخورد پکمن با روح
-                else if (pictureBox_pacman.Bounds.IntersectsWith(item.Bounds) && (string)item.Tag == "ghost")
-                {
-                    if (item.Visible)
-                    {
-                        item.Tag = "_ghost";
-                        score -= 20;
-                        label_score.Text = "امتیاز:" + score.ToString();
-                        pictureBox_pacman.Left = 191;
-                        pictureBox_pacman.Top = 314;
-                        pictureBox_pacman.Image = Properties.Resources.pacman_right;
-                        side = "";
-                        count_health--;
-                        switch (count_health)
-                        {
-                            case 2: picHealth3.Visible = false; break;
-                            case 1: picHealth2.Visible = false; break;
-                            case 0: picHealth1.Visible = false; side = ""; break;
-
-                        }
+                        case "wall":
+                            switch(side)
+                            {
+                                //یک حرکت به عقب پس از برخورد به دیوار
+                                case "up": pictureBox_pacman.Top++; break;
+                                case "down": pictureBox_pacman.Top--; break;
+                                case "right": pictureBox_pacman.Left--; break;
+                                case "left": pictureBox_pacman.Left++; break;
+                            }
+                            side = "";
+                            break;
+                        case "food"://برخورد با غذا
+                            if (item.Visible)
+                            {
+                                score += 10;
+                                item.Visible = false;
+                                item.Tag = "_food";
+                            }
+                            label_score.Text = "امتیاز:" + score.ToString();
+                            break;
+                        case "ghost"://برخورد پکمن با روح
+                            if (item.Visible)
+                            {
+                                item.Tag = "_ghost";
+                                score -= 20;
+                                label_score.Text = "امتیاز:" + score.ToString();
+                                pictureBox_pacman.Left = 191;
+                                pictureBox_pacman.Top = 314;
+                                pictureBox_pacman.Image = Properties.Resources.pacman_right;
+                                side = "";
+                                count_health--;
+                                switch (count_health)
+                                {
+                                    case 2: picHealth3.Visible = false; break;
+                                    case 1: picHealth2.Visible = false; break;
+                                    case 0: picHealth1.Visible = false; side = ""; break;
+                                }
+                            }
+                            break;
                     }
                 }
 
